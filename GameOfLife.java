@@ -20,12 +20,8 @@ public class GameOfLife {
 	// Reads the data file and prints the initial board.
 	private static void test1(String fileName) {
 		int[][] board = read(fileName);
-		for (int i = 1; i < board.length - 1; i++) {
-			for (int j = 1; j < board[i].length - 1; j++) {
-				System.out.print(board[i][j] + " ");
-			}
-			System.out.println();
-		}
+		print(board);
+
 	}
 		
 	// Reads the data file, and runs a test that checks 
